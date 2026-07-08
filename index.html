@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>African Kingdom Restaurant, Bar &amp; Club | AKR</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+
+    <a href="#" class="logo">
+      <!-- LOGO PLACEHOLDER: replace src with images/akr-logo.png -->
+      <img src="akrlogo.webp" alt="African Kingdom Restaurant logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <span class="logo-fallback" aria-hidden="true">
+        <span class="logo-mark">AKR</span>
+      </span>
+      <span class="logo-text">
+        African Kingdom
+        <small>Restaurant &middot; Bar &middot; Club</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary header-cta">Contact</a>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+
+<!-- ============ MOBILE NAV OVERLAY ============ -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <div class="mobile-nav-top">
+    <a href="#" class="logo">
+      <span class="logo-mark">AKR</span>
+      <span class="logo-text">
+        African Kingdom
+        <small>Restaurant &middot; Bar &middot; Club</small>
+      </span>
+    </a>
+    <button class="mobile-close" id="mobileCloseBtn" aria-label="Close menu">&times;</button>
+  </div>
+
+  <ul class="mobile-nav-links">
+    <li><a href="#" class="mobile-link">Home</a></li>
+    <li><a href="#menu" class="mobile-link">Menu</a></li>
+    <li><a href="#about" class="mobile-link">About</a></li>
+  </ul>
+
+  <a href="#contact" class="btn btn-primary mobile-cta">Reserve a Table</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg-decor" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="ring ring-1"></span>
+    <span class="ring ring-2"></span>
+  </div>
+
+  <div class="hero-inner">
+
+    <div class="hero-content hero-content-top">
+      <span class="badge fade-up">✨ Authentic African Dining Experience</span>
+
+      <h1 class="fade-up delay-1">Experience the True Taste of Africa in Every Bite</h1>
+    </div>
+
+
+    <div class="hero-content hero-content-bottom">
+      <p class="hero-text fade-up delay-2">
+        Enjoy authentic African cuisine, handcrafted cocktails, premium drinks, and
+        unforgettable hospitality in an atmosphere designed for memorable experiences.
+      </p>
+
+      <div class="hero-buttons fade-up delay-3">
+        <a href="#contact" class="btn btn-primary">Reserve a Table</a>
+        <a href="#menu" class="btn btn-secondary">Explore Menu</a>
+      </div>
+    </div>
+
+    <div class="hero-visual fade-in-scale delay-2">
+      <div class="hero-image-frame">
+        <!-- IMAGE PLACEHOLDER: replace src with images/hero-food.jpg -->
+        <img src="herosectionimage.webp" alt="Signature African dishes: jollof rice, grilled chicken, plantain and cocktails" class="hero-image" onerror="this.onerror=null; this.src='';this.classList.add('img-fallback');">
+        <div class="hero-order-overlay">
+          <span class="order-btn">
+            <svg class="order-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            Order Now
+          </span>
+        </div>
+      </div>
+
+      <div class="float-card card-rating float-1">
+        <span class="card-icon">⭐</span>
+        <div>
+          <strong>4.6</strong>
+          <small>Google Rating</small>
+        </div>
+      </div>
+
+      <div class="float-card card-hours float-2">
+        <span class="card-icon">🕐</span>
+        <div>
+          <strong>Open 24 Hours</strong>
+          <small>Every day</small>
+        </div>
+      </div>
+
+      <div class="float-card card-cocktails float-3">
+        <span class="card-icon">🍸</span>
+        <div>
+          <strong>Premium</strong>
+          <small>Cocktails</small>
+        </div>
+      </div>
+
+      <div class="float-card card-cuisine float-4">
+        <span class="card-icon">🍲</span>
+        <div>
+          <strong>Authentic</strong>
+          <small>African Cuisine</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="menu-section" id="menu">
+  <div class="menu-inner">
+
+    <div class="menu-heading fade-up">
+      <span class="badge">👑 Handpicked Favorites</span>
+      <h2>Straight From the Royal Kitchen</h2>
+      <p class="menu-subtext">
+        Slow-cooked, bold-spiced, and made the traditional way — a taste of every corner of the kingdom.
+      </p>
+    </div>
+
+    <div class="menu-carousel" id="menuCarousel">
+
+      <button class="menu-nav menu-nav-prev" id="menuPrev" aria-label="Show previous dishes">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+
+      <div class="menu-track-viewport">
+        <div class="menu-track" id="menuTrack">
+
+          <!-- ============ MENU CARD (duplicate this block for each dish) ============ -->
+          <article class="menu-card" data-fav-id="jollof-rice">
+            <div class="menu-card-image">
+              <!-- IMAGE PLACEHOLDER: replace src with images/menu/jollof-rice.jpg -->
+              <img src="amalafood.webp" alt="Smoky jollof rice"
+                   class="menu-img"
+                   onerror="this.style.display='none'; this.parentElement.classList.add('img-placeholder');">
+              <button class="menu-fav" aria-label="Add Jollof Rice to favorites" aria-pressed="false">
+                <svg class="fav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 21s-7.5-4.6-10-9.2C.4 8.1 2.3 4 6.2 4c2 0 3.6 1.1 4.8 2.7C12.2 5.1 13.8 4 15.8 4c3.9 0 5.8 4.1 4.2 7.8-2.5 4.6-10 9.2-10 9.2z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="menu-card-body">
+              <h3>Amala</h3>
+              <button class="menu-order-btn">
+                <svg class="order-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 7h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z"/>
+                  <path d="M9 7V5.5A3 3 0 0 1 12 2.5a3 3 0 0 1 3 3V7"/>
+                  <path d="M9.5 12.5l1.8 1.8L15 10.5"/>
+                </svg>
+                Order
+              </button>
+            </div>
+          </article>
+
+          <article class="menu-card" data-fav-id="suya-skewers">
+            <div class="menu-card-image">
+              <!-- IMAGE PLACEHOLDER: replace src with images/menu/suya-skewers.jpg -->
+              <img src="okorofood.webp" alt="Grilled suya skewers"
+                   class="menu-img"
+                   onerror="this.style.display='none'; this.parentElement.classList.add('img-placeholder');">
+              <button class="menu-fav" aria-label="Add Suya Skewers to favorites" aria-pressed="false">
+                <svg class="fav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 21s-7.5-4.6-10-9.2C.4 8.1 2.3 4 6.2 4c2 0 3.6 1.1 4.8 2.7C12.2 5.1 13.8 4 15.8 4c3.9 0 5.8 4.1 4.2 7.8-2.5 4.6-10 9.2-10 9.2z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="menu-card-body">
+              <h3>Okro Soup</h3>
+              <button class="menu-order-btn">
+                <svg class="order-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 7h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z"/>
+                  <path d="M9 7V5.5A3 3 0 0 1 12 2.5a3 3 0 0 1 3 3V7"/>
+                  <path d="M9.5 12.5l1.8 1.8L15 10.5"/>
+                </svg>
+                Order
+              </button>
+            </div>
+          </article>
+
+          <article class="menu-card" data-fav-id="peppered-chicken">
+            <div class="menu-card-image">
+              <!-- IMAGE PLACEHOLDER: replace src with images/menu/peppered-chicken.jpg -->
+              <img src="amalafood.webp" alt="Peppered chicken"
+                   class="menu-img"
+                   onerror="this.style.display='none'; this.parentElement.classList.add('img-placeholder');">
+              <button class="menu-fav" aria-label="Add Peppered Chicken to favorites" aria-pressed="false">
+                <svg class="fav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 21s-7.5-4.6-10-9.2C.4 8.1 2.3 4 6.2 4c2 0 3.6 1.1 4.8 2.7C12.2 5.1 13.8 4 15.8 4c3.9 0 5.8 4.1 4.2 7.8-2.5 4.6-10 9.2-10 9.2z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="menu-card-body">
+              <h3>Amala</h3>
+              <button class="menu-order-btn">
+                <svg class="order-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 7h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z"/>
+                  <path d="M9 7V5.5A3 3 0 0 1 12 2.5a3 3 0 0 1 3 3V7"/>
+                  <path d="M9.5 12.5l1.8 1.8L15 10.5"/>
+                </svg>
+                Order
+              </button>
+            </div>
+          </article>
+
+          
+          <!-- ============ END DUPLICATE BLOCK ============ -->
+
+        </div>
+      </div>
+
+      <button class="menu-nav menu-nav-next" id="menuNext" aria-label="Show next dishes">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
