@@ -52,6 +52,22 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", closeMobileNav);
   });
 
+  mobileLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    document.querySelectorAll(".mobile-link").forEach((l) => l.classList.remove("active"));
+    if (link.classList.contains("mobile-link")) link.classList.add("active");
+  });
+});
+
+
+const desktopLinks = document.querySelectorAll(".main-nav a");
+desktopLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    desktopLinks.forEach((l) => l.classList.remove("active"));
+    link.classList.add("active");
+  });
+});
+
   // Close mobile nav when clicking the dimmed backdrop (outside the panel)
 document.body.addEventListener("click", (e) => {
   if (e.target === document.body && mobileNav.classList.contains("open")) {
