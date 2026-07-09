@@ -52,6 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", closeMobileNav);
   });
 
+  // Close mobile nav when clicking the dimmed backdrop (outside the panel)
+document.body.addEventListener("click", (e) => {
+  if (e.target === document.body && mobileNav.classList.contains("open")) {
+    closeMobileNav();
+  }
+});
+
   // Close mobile nav with the Escape key
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && mobileNav.classList.contains("open")) {
